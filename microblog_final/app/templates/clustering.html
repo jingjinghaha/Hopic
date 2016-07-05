@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Clustered Hot Topics</title>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script>
+			$(function() {
+			$( document ).tooltip();
+			});
+		</script>
+		
+	</head>
+	<style>
+		body {
+			background: #1d1d1d;
+		}
+		label {
+			display: inline-block;
+			width: 30em;
+		}
+		a[title]{
+			font-size: 5px;
+		}
+		h1 {
+			color: #fff;
+		}
+	</style>
+	<body>
+		<h1>Clustered Topics</h1>
+		<svg width="1800" height="900">
+			{%for p1 in position1%}
+				<a href="#" title="{{p1.id}}">
+				<circle cx={{p1.x}} cy={{p1.y}} r="2" stroke="red" stroke-width="1" fill="red"/>
+				</a>
+			{%endfor%}
+			{%for p2 in position2%}
+				<a href="#" title="{{p2.id}}">
+				<circle cx={{p2.x}} cy={{p2.y}} r="2" stroke="blue" stroke-width="1" fill="blue"/>
+				</a>
+			{%endfor%}
+			{%for p3 in position3%}
+				<a href="#" title="{{p3.id}}">
+				<circle cx={{p3.x}} cy={{p3.y}} r="2" stroke="green" stroke-width="1" fill="green"/>
+				</a>
+			{%endfor%}
+			{%for p4 in position4%}
+				<a href="#" title="{{p4.id}}">
+				<circle cx={{p4.x}} cy={{p4.y}} r="2" stroke="white stroke-width="1" fill="white"/>
+				</a>
+			{%endfor%}
+			{%for p5 in position5%}
+				<a href="#" title="{{p5.id}}">
+				<circle cx={{p5.x}} cy={{p5.y}} r="2" stroke="grey" stroke-width="1" fill="grey"/>
+				</a>
+			{%endfor%}
+			{%for p6 in position6%}
+				<a href="#" title="{{p6.id}}">
+				<circle cx={{p6.x}} cy={{p6.y}} r="2" stroke="purple" stroke-width="1" fill="purple"/>
+				</a>
+			{%endfor%}
+			{%for p7 in position7%}
+				<a href="#" title="{{p7.id}}">
+				<circle cx={{p7.x}} cy={{p7.y}} r="2" stroke="orange" stroke-width="1" fill="orange"/>
+				</a>
+			{%endfor%}
+			{%for p8 in position8%}
+				<a href="#" title="{{p8.id}}">
+				<circle cx={{p8.x}} cy={{p8.y}} r="2" stroke="yellow" stroke-width="1" fill="yellow"/>
+				</a>
+			{%endfor%}
+			{%for p9 in position9%}
+				<a href="#" title="{{p9.id}}">
+				<circle cx={{p9.x}} cy={{p9.y}} r="2" stroke="#00CC99" stroke-width="1" fill="#00CC99"/>
+				</a>
+			{%endfor%}
+			{%for p10 in position10%}
+				<a href="#" title="{{p10.id}}">
+				<circle cx={{p10.x}} cy={{p10.y}} r="2" stroke="#FF66CC" stroke-width="1" fill="#FF66CC"/>
+				</a>
+			{%endfor%}
+			{%for p11 in position11%}
+				<a href="#" title="{{p11.id}}">
+				<circle cx={{p11.x}} cy={{p11.y}} r="2" stroke="#993300" stroke-width="1" fill="#993300"/>
+				</a>
+			{%endfor%}
+			{%for p12 in position12%}
+				<a href="#" title="{{p12.id}}">
+				<circle cx={{p12.x}} cy={{p12.y}} r="2" stroke="#000099" stroke-width="1" fill="#000099"/>
+				</a>
+			{%endfor%}
+			{%for p13 in position13%}
+				<a href="#" title="{{p13.id}}">
+				<circle cx={{p13.x}} cy={{p13.y}} r="2" stroke="#006666" stroke-width="1" fill="#006666"/>
+				</a>
+			{%endfor%}
+			{%for p14 in position14%}
+				<a href="#" title="{{p14.id}}">
+				<circle cx={{p14.x}} cy={{p14.y}} r="2" stroke="#FFCC99" stroke-width="1" fill="#FFCC99"/>
+				</a>
+			{%endfor%}
+		</svg>
+	</body>
+</html>
+  

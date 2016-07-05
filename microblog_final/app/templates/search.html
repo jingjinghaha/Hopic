@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Search Page</title>
+	</head>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #1d1d1d;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			text-align: center;
+			}
+		h1 {
+			font: 4em Georgia, "Times New Roman", Times, serif;
+			color: #fff;
+			height: 500px;
+			line-height: 800px;
+			text-align:center;
+			}
+		.myInputBox{
+			font: Georgia, "Times New Roman", Times, serif;
+			font-size: 20px;
+			width: 300px;
+			height: 40px;
+		}
+		.mySearchButton, .forecast{
+			font: Georgia, "Times New Roman", Times, serif;
+			font-size: 20px;
+			width : 180px;
+			height: 40px;
+		}
+		.clustering{
+			font: 1.5em Georgia, "Times New Roman", Times, serif;
+			color: #cfcfcf;
+			margin: 20px;
+		}
+	
+	</style>
+	<body>
+		<h1>Hot Topic Search</h1>
+		<form action='/results' method="GET">
+			<input type="text" name ="query" class="myInputBox">
+			<input type="submit" name="searchKey" value="Search" class="mySearchButton">
+		</form>
+		
+		<form action='/forecast' method="GET">
+			<input type="text" name ="query" class="myInputBox">
+			<input type="submit" name="myForecast" value="Topic Forecast"class="forecast">
+		</form>
+		<a href="/clustering" class="clustering">Clustered hot topics</a>
+	</body>
+</html>
